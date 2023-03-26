@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4882b5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.form {
+    background-color: #90dadabc;
+    padding: 15px;
+    border: 1px solid #00ffff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input {
+    width: 80%;
+    height: 30px;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.add {
+    background-color: #0088ff;
+    border: none;
+    width: 15%;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .add {
+        padding: 5px;
+        font-size: 13px;
+        width: 25%;
+        margin-left: 5px;
+    }
+
+    .input {
+        width: 70%;
+    }
+}
+
+.add:hover {
+    background-color: #2293f5;
+}
+
+.taskes {
+    background-color: #90dadabc;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border: 2px solid #00ffff;
+}
+
+.taskes .task {
+    background-color: #c3eaea;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    overflow-x: auto;
+}
+
+.taskes .task .delate {
+    background-color: #2293f5;
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+@media (max-width:767px) {
+
+    .taskes .task,
+    .taskes .task .delate {
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+    .done {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        overflow-x: auto;
+        text-decoration: line-through;
+        color: #4882b5;
+    }
